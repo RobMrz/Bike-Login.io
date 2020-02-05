@@ -1,0 +1,102 @@
+body {
+	background-image: url("Bike-Logo.jpg");
+	background-repeat: no-repeat;
+	background-position: top left;
+	background-attachment: fixed;
+	background-size: 100% 100%;
+}
+
+.Central_Container{
+  width: 350px;
+  height: 500px;
+  background: inherit;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  margin-left: -175px;
+  margin-top: -250px;
+  border-radius: 8px;
+  background-color: #707075;
+}
+
+.Central_Container::before {
+  content: "";
+  position: absolute;
+  top: -25px;
+  left: -25px;
+  bottom: 0;
+  right: 0;
+  /*frosted div effect*/
+  background: inherit;
+  box-shadow: 100px 0px 20px 200px rgba(255,255,255,0.5); 
+  filter: blur(20px);
+}
+
+/*the object which the border gets drawn around and dashed*/
+path {
+	fill: none;
+	stroke:#f0f2f5;
+	stroke-width: 4;
+	/*the first integer is the length of the visible line, the second integer is the invisible gap*/
+	stroke-dasharray: 240 1386;
+}
+
+/* the box in which the object is drawn*/
+svg {
+	position: absolute;
+	width: 320px;
+	margin-top: 24%;
+	/*margin-left: 3%;*/
+}
+
+.form {
+	position: relative;
+	margin: 10%;
+}
+
+#login {
+	margin-left: 35%;
+	color: white;	
+}
+
+p {
+	color: white;	
+}
+
+input {
+  background: transparent;
+  border: 0;
+  color: #f2f2f2;
+  font-size: 20px;
+  height: 30px;
+  line-height: 30px;
+  outline: none !important;
+  width: 90%;
+  margin-top: 4%;
+  position: relative;
+}
+
+label {
+	position: relative;
+	top: 10px;
+	left: 15px;
+	color: white;
+}
+
+#username {
+	border-style: none none solid none;
+	margin-left: 3%;
+}
+
+#password {
+	border-style: none none solid none;
+	margin-top: 7%;
+	margin-left: 3%;
+}
+
+#enter {
+  margin-top: 12%;
+  color: white;
+  transition: color 300ms;
+}
