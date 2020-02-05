@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<html>
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="style.css">
@@ -18,7 +18,7 @@
         	<input type="username" id="username">
         	<label id="lblpsw" for="password">Password</label>
         	<input type="password" id="password">
-        	<input type="submit" id="enter" value="Enter" onclick="getElement()" method="post"></br>
+        	<input type="submit" id="enter" value="Enter" onclick="getElement()" method="post">
 		</div>		
 	</div>
 	<script type="text/javascript" src="javascript.js"></script>
